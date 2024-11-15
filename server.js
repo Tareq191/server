@@ -15,10 +15,14 @@ app.use(bodyParser.json());
 
 // MySQL connection
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'facebook_clone'
+   host: process.env.sql305.infinityfree.com, // MySQL host from InfinityFree
+  user: process.env.if0_37643301, // Username from InfinityFree
+  password: process.env.kbfbeunY9XRL, // Password from InfinityFree
+  database: process.if0_37643301_XXX, 
+  // host: 'localhost',
+  // user: 'root',
+  // password: '',
+  // database: 'facebook_clone'
 });
 
 db.connect((err) => {
